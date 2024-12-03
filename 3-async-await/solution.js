@@ -32,8 +32,8 @@ async function solution() {
         ]);
 
         console.log("promise.all:",{id: id},'\n',
-            {product: product},'\n',
-            {price: price});
+            { product: product },'\n',
+            { price: price });
 
     } catch (error) {
         console.error('Error Promise.all:', error.message);
@@ -46,7 +46,7 @@ async function solution() {
 
     results.forEach((result, index) => {
         if (result.status === 'fulfilled') {
-            console.log(`Result primise.allsettled: ${index + 1}:`, result.value);
+            console.log(`Result promise.allSettled: ${index + 1}:`, result.value);
         } else {
             console.error(`Error ${index + 1}:`, result.reason);
         }

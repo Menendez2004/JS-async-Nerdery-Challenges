@@ -57,7 +57,7 @@ const validateUser = require('./validate-user');
                 }
             });
         });
-    }
+    };
 
     function processResults(successArray, failureArray) {
         console.log('*************\nSuccess');

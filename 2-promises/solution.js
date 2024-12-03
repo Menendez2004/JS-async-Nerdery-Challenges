@@ -45,10 +45,10 @@ function solution() {
         .then((lastName) => {
             return firstName(lastName)
                 .then((firstName) => console.log(`Full name: ${firstName} ${lastName}`))
-                    .catch((e) => console.log(`ERROR: ${e.message}`));
         })
         .catch((e) => console.log(`ERROR: ${e.message}`))//invalid
         .finally(() => console.log(`Processed ID: ${id}`));
 }
 
 solution();
+
